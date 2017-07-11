@@ -1,0 +1,50 @@
+﻿@model Intellij_Assessment.Assessment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Assessment</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fdName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fdName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fdDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fdDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fdDateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fdDateCreated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fdDateModified)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fdDateModified)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.fdId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
